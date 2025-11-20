@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { HERO_TITLES, SOCIAL_LINKS } from "../constants";
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, User } from "lucide-react";
+import profileImg from "../images/profile.jpg";
 
 const Hero: React.FC = () => {
   const [titleIndex, setTitleIndex] = useState(0);
@@ -51,10 +52,10 @@ const Hero: React.FC = () => {
                 Open to Work
               </div>
 
-              <h1 className="text-5xl lg:text-7xl font-bold tracking-tight text-white leading-tight">
+              <h1 className="text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
                 Hi, I'm{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-violet-400">
-                  Nithin
+                  Nithin Katla
                 </span>
               </h1>
 
@@ -116,16 +117,49 @@ const Hero: React.FC = () => {
 
           {/* Right Column: Profile Image */}
           <div className="hidden lg:block w-full lg:w-5/12 z-10 pl-0 lg:pl-8">
-            <div className="relative w-full aspect-square max-w-md mx-auto lg:mr-0 group">
-              <div className="absolute -inset-1 bg-gradient-to-tr from-primary-500 to-violet-500 rounded-[2rem] blur opacity-30 group-hover:opacity-60 transition duration-1000 group-hover:duration-200"></div>
-              <div className="absolute inset-0 bg-slate-800 rounded-[2rem] rotate-6 transform transition-transform group-hover:rotate-3 duration-500 ease-out border border-slate-700"></div>
-              <div className="absolute inset-0 bg-slate-900 rounded-[2rem] -rotate-3 transform transition-transform group-hover:rotate-0 duration-500 ease-out overflow-hidden border border-slate-700 shadow-2xl relative">
-                <div className="absolute inset-0 bg-slate-800 flex items-center justify-center">
-                  <img
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=774&q=80"
-                    alt="Nithin Katla"
-                    className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500 filter grayscale group-hover:grayscale-0"
-                  />
+            <div className="relative w-full aspect-square max-w-md mx-auto group">
+              {/* Soft Glow */}
+              <div
+                className="absolute inset-0 rounded-2xl blur-xl opacity-30 group-hover:opacity-60 
+      transition duration-700 bg-gradient-to-tr from-primary-500 to-violet-500"
+              ></div>
+
+              {/* Subtle rotated card frame */}
+              <div
+                className="absolute inset-0 rounded-2xl bg-slate-800 border border-slate-700 
+      rotate-3 group-hover:rotate-0 transition-transform duration-500 ease-out"
+              ></div>
+
+              {/* Main Image Container */}
+              <div
+                className="absolute inset-0 rounded-2xl overflow-hidden bg-slate-900 border border-slate-700 
+      shadow-xl transition-transform duration-500"
+              >
+                <img
+                  src={profileImg}
+                  alt="Nithin Katla"
+                  className="w-full h-full object-cover rounded-2xl transition-transform duration-700 
+        group-hover:scale-105"
+                  loading="eager"
+                />
+
+                {/* Floating Badge */}
+                <div className="absolute bottom-6 left-6 right-6 z-20">
+                  <div
+                    className="bg-slate-900/90 backdrop-blur-md border border-slate-700/50 p-4 rounded-xl 
+          translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 
+          transition-all duration-500 delay-100 shadow-xl"
+                  >
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="h-2 w-2 rounded-full bg-emerald-500 animate-ping"></div>
+                      <span className="text-emerald-400 text-xs font-bold tracking-wider uppercase">
+                        Available Now
+                      </span>
+                    </div>
+                    <p className="text-slate-300 text-sm font-medium">
+                      Expert in Full-Stack and Distributed Systems
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
