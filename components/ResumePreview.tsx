@@ -18,7 +18,7 @@ const ResumePreview: React.FC = () => {
           <button
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/1xFNeuzRQ43YqvPDgPxUUX8N4hVS4soGX/view?usp=sharing",
+                "https://drive.google.com/file/d/1g_ozaB72vOQtOFYpEUpQ4O6Tc_O_lG3x/view?usp=sharing",
                 "_blank"
               )
             }
@@ -71,10 +71,6 @@ const ResumePreview: React.FC = () => {
                   <li>
                     Integrated reinforcement learning module to dynamically
                     switch consensus protocols.
-                  </li>
-                  <li>
-                    Automated IaC workflows using Terraform and Jenkins on Azure
-                    Kubernetes Service.
                   </li>
                 </ul>
               </div>

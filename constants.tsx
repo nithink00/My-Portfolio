@@ -35,7 +35,6 @@ export const EXPERIENCES: Experience[] = [
     description: [
       "Built a distributed consensus orchestrator in Go, deployed across Kubernetes to evaluate protocols (RCC, DQBFT, MirBFT), improving reliability.",
       "Integrated reinforcement learning to dynamically switch consensus protocols based on workload, boosting throughput by 25% and cutting recovery latency by 18%.",
-      "Automated IaC workflows using Terraform and Jenkins on Azure Kubernetes Service, reducing cluster setup time by 50%.",
       "Implemented system monitoring with Prometheus and Grafana to visualize node health, shortening incident response by 40%."
     ],
     techStack: [
@@ -43,7 +42,6 @@ export const EXPERIENCES: Experience[] = [
       "Protobuf",
       "gRPC",
       "Kubernetes",
-      "Terraform",
       "Azure",
       "Prometheus",
       "RL"
@@ -58,8 +56,7 @@ export const EXPERIENCES: Experience[] = [
     description: [
       "Co-developed a web-based 3D robotics simulation platform using React.js and Babylon.js.",
       "Implemented backend services in Go to handle simulation data, compute requests, and telemetry.",
-      "Containerized backend using Docker and deployed to Kubernetes for multi-environment testing.",
-      "Integrated application monitoring with Prometheus/Grafana to track simulation performance."
+      "Containerized backend using Docker and deployed to Kubernetes for multi-environment testing."
     ],
     techStack: ["React.js", "Babylon.js", "Go", "Docker", "Kubernetes"]
   },
@@ -94,10 +91,10 @@ export const EXPERIENCES: Experience[] = [
     period: "Apr 2020 – Mar 2021",
     description: [
       "Developed AI-driven conversational chat widgets using Rasa and React.js (90% intent accuracy).",
-      "Implemented RESTful APIs in .NET Core with SQL Server and Redis, increasing throughput by 25%.",
+      "Implemented RESTful APIs in Django with SQL Server and Redis, increasing throughput by 25%.",
       "Set up application monitoring using Azure App Insights."
     ],
-    techStack: ["React.js", "Rasa", ".NET Core", "SQL Server", "Azure"]
+    techStack: ["React.js", "Rasa", "Django", "SQL Server", "Azure"]
   }
 ];
 
