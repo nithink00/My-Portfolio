@@ -23,9 +23,6 @@ const Education: React.FC = () => {
               <div className="flex-1 w-full">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                   <h3 className="text-xl font-bold text-white">{edu.school}</h3>
-                  <span className="text-sm text-slate-500 bg-slate-950 px-3 py-1 rounded-full border border-slate-800 mt-2 md:mt-0 w-fit">
-                    {edu.period}
-                  </span>
                 </div>
 
                 <h4 className="text-lg text-primary-400 mb-2">{edu.degree}</h4>

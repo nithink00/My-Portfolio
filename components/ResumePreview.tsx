@@ -34,7 +34,7 @@ const ResumePreview: React.FC = () => {
           {/* Header */}
           <div className="text-center border-b-2 border-slate-900 pb-6 mb-6">
             <h1 className="text-4xl font-bold uppercase tracking-wider mb-2">
-              Nithin Katla
+              Nithin
             </h1>
             <div className="text-slate-600 font-medium space-x-2 md:space-x-4 flex flex-wrap justify-center">
               <span>+1(934) 451-9425</span>

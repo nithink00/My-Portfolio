@@ -76,7 +76,7 @@ const Contact: React.FC = () => {
 
         <div className="border-t border-slate-900 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-slate-500 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} Nithin Katla. All rights reserved.
+            © {new Date().getFullYear()} Nithin. All rights reserved.
           </p>
 
           <button

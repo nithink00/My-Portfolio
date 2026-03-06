@@ -17,7 +17,6 @@ const App: React.FC = () => {
       <Projects />
       <Skills />
       <Education />
-      <ResumePreview />
       <Contact />
     </main>
   );
