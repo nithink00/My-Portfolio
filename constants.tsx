@@ -51,7 +51,7 @@ export const EXPERIENCES: Experience[] = [
     role: "Graduate Research Assistant",
     company: "The Research Foundation for SUNY - Mechanismic Inc.",
     location: "Stony Brook, NY",
-    period: "Dec 2023 - Jan 2025",
+    period: "Dec 2023 - Jun 2025",
     description: [
       "Co-developed a web-based 3D robotics simulation platform using React.js and Babylon.js.",
       "Implemented backend services in Go to handle simulation data, compute requests, and telemetry.",
