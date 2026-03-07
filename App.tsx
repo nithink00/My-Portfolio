@@ -5,7 +5,6 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
-import ResumePreview from "./components/ResumePreview";
 import Contact from "./components/Contact";
 
 const App: React.FC = () => {

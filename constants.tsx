@@ -16,7 +16,6 @@ export const NAV_LINKS = [
   { name: "Projects", href: "#projects" },
   { name: "Skills", href: "#skills" },
   { name: "Education", href: "#education" },
-  { name: "Resume", href: "#resume" }
 ];
 
 export const HERO_TITLES = [
