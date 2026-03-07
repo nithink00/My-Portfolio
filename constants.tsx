@@ -26,37 +26,11 @@ export const HERO_TITLES = [
 ];
 export const EXPERIENCES: Experience[] = [
   {
-    id: "exp0",
-    role: "Software Engineer",
-    company: "PNC Bank",
-    location: "USA",
-    period: "Sep 2025 - Present",
-    description: [
-      "Modernized core banking systems by transforming legacy monoliths into cloud-native microservices using Spring Boot and FastAPI.",
-      "Built secure REST and GraphQL APIs connecting backend financial services with customer-facing apps across mortgages, lending, and account services.",
-      "Implemented OAuth 2.0, JWT, and RBAC authentication workflows to secure financial data and ensure compliance.",
-      "Optimized PostgreSQL, MySQL, and MongoDB databases to support high availability and reliable financial transactions.",
-      "Collaborated with frontend teams using React.js, Next.js, and Tailwind CSS to improve user experience across banking platforms."
-    ],
-    techStack: [
-      "Java",
-      "Spring Boot",
-      "FastAPI",
-      "React.js",
-      "Next.js",
-      "PostgreSQL",
-      "MongoDB",
-      "Redis",
-      "OAuth2",
-      "JWT"
-    ]
-  },
-  {
     id: "exp1",
     role: "Research Assistant - Visiting Scholar",
     company: "Stony Brook University",
     location: "Remote",
-    period: "Jul 2025 - Sep 2025",
+    period: "Jul 2025 - Feb 2026",
     description: [
       "Built a distributed consensus orchestrator in Go, deployed across Kubernetes to evaluate protocols (RCC, DQBFT, MirBFT), improving reliability.",
       "Integrated reinforcement learning to dynamically switch consensus protocols based on workload, boosting throughput by 25% and cutting recovery latency by 18%.",
