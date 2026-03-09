@@ -20,77 +20,86 @@ export const NAV_LINKS = [
 
 export const HERO_TITLES = [
   "Software Engineer",
-  "Backend Engineer",
-  "AI Infra Engineer"
+  "Backend & Distributed Systems Engineer",
+  "AI Infrastructure Engineer"
 ];
+
 export const EXPERIENCES: Experience[] = [
   {
     id: "exp1",
-    role: "Research Assistant - Visiting Scholar",
+    role: "Research Assistant - Distributed Systems Research",
     company: "Stony Brook University",
     location: "Remote",
     period: "Jul 2025 - Feb 2026",
     description: [
-      "Built a distributed consensus orchestrator in Go, deployed across Kubernetes to evaluate protocols (RCC, DQBFT, MirBFT), improving reliability.",
-      "Integrated reinforcement learning to dynamically switch consensus protocols based on workload, boosting throughput by 25% and cutting recovery latency by 18%.",
-      "Implemented system monitoring with Prometheus and Grafana to visualize node health, shortening incident response by 40%."
+      "Designed and implemented a distributed consensus orchestration platform in Go to deploy and manage consensus protocols across Kubernetes clusters.",
+      "Built a coordination layer capable of orchestrating multiple consensus algorithms and automatically handling leader election, node recovery and configuration updates.",
+      "Developed a reinforcement learning controller that dynamically selected optimal consensus strategies based on runtime latency and throughput metrics, improving throughput by 25% and reducing recovery latency by 18%.",
+      "Implemented distributed system monitoring using Prometheus and Grafana to visualize node health, performance metrics and cluster level events."
     ],
     techStack: [
       "Go",
-      "Protobuf",
       "gRPC",
+      "Protobuf",
       "Kubernetes",
       "Azure",
       "Prometheus",
-      "RL"
+      "Grafana",
+      "Reinforcement Learning"
     ]
   },
+
   {
     id: "exp2",
     role: "Graduate Research Assistant",
-    company: "The Research Foundation for SUNY - Mechanismic Inc.",
+    company: "Mechanismic Inc. / SUNY Research Foundation",
     location: "Stony Brook, NY",
     period: "Dec 2023 - Jun 2025",
     description: [
-      "Co-developed a web-based 3D robotics simulation platform using React.js and Babylon.js.",
-      "Implemented backend services in Go to handle simulation data, compute requests, and telemetry.",
-      "Containerized backend using Docker and deployed to Kubernetes for multi-environment testing."
+      "Co-developed a web based robotics simulation platform that visualized robotic kinematics and distributed simulation workloads in real time.",
+      "Engineered backend services in Go to process simulation compute jobs and telemetry streams across distributed nodes.",
+      "Containerized simulation services using Docker and deployed them to Kubernetes clusters for scalable testing environments.",
+      "Implemented CI/CD pipelines with GitHub Actions to automate build, testing and deployment workflows."
     ],
     techStack: ["React.js", "Babylon.js", "Go", "Docker", "Kubernetes"]
   },
+
   {
     id: "exp3",
-    role: "Specialist Programmer (Full Stack Engineer)",
+    role: "Software Engineer",
     company: "Apple Inc. (via Infosys)",
     location: "Hyderabad, India",
     period: "Sep 2021 – Aug 2023",
     description: [
-      "Built high-throughput backend services in Java Spring Boot for Apple Maps ingestion pipelines (99.9% reliability).",
-      "Optimized APIs with Redis caching and PostgreSQL indexing, reducing latency from 300ms to 120ms.",
-      "Developed internal analytics dashboards using React.js, reducing manual QA time by 50%.",
-      "Implemented monitoring with Grafana/Prometheus, accelerating failure recovery by 35%."
+      "Developed high throughput backend services in Java Spring Boot powering Apple Maps ingestion pipelines processing millions of location updates daily.",
+      "Built REST APIs and Kafka based data pipelines to ingest and normalize vendor supplied location datasets from multiple providers.",
+      "Optimized Redis caching and PostgreSQL query performance reducing API latency from 300ms to 120ms under high traffic workloads.",
+      "Developed internal analytics dashboards using React.js to monitor ingestion pipelines and identify vendor data quality issues.",
+      "Implemented monitoring pipelines using Prometheus and Grafana to analyze ingestion failures and pipeline anomalies."
     ],
     techStack: [
       "Java",
       "Spring Boot",
-      "React.js",
+      "Kafka",
       "Redis",
       "PostgreSQL",
-      "GraphQL",
+      "React.js",
       "Docker",
-      "Spinnaker"
+      "Kubernetes"
     ]
   },
+
   {
     id: "exp4",
     role: "Software Engineer",
-    company: "Dhan Technology Labs India",
+    company: "Dhan Technology Labs",
     location: "Hyderabad, India",
     period: "Apr 2020 – Aug 2021",
     description: [
-      "Developed AI-driven conversational chat widgets using Rasa and React.js (90% intent accuracy).",
-      "Implemented RESTful APIs in Django with SQL Server and Redis, increasing throughput by 25%.",
-      "Set up application monitoring using Azure App Insights."
+      "Developed conversational AI systems for healthcare workflows using Rasa and React based chat widgets.",
+      "Implemented Django REST APIs integrating SQL Server and Redis caching layers improving throughput by 25%.",
+      "Built intent classification pipelines and entity extraction workflows using Rasa to automate patient support interactions.",
+      "Integrated Azure Application Insights to monitor chatbot performance, usage metrics and production errors."
     ],
     techStack: ["React.js", "Rasa", "Django", "SQL Server", "Azure"]
   }
@@ -99,67 +108,65 @@ export const EXPERIENCES: Experience[] = [
 export const PROJECTS: Project[] = [
   {
     id: "proj1",
-    title: "Fault-Tolerant Replication Protocol with PBFT",
+    title: "Fault Tolerant Replication Protocol with PBFT",
     category: "Distributed Systems",
     description:
-      "Designed a PBFT-based replication protocol using threshold signatures and garbage collection. Optimized for high concurrency, processing up to 10,000 client requests/sec under Byzantine faults.",
+      "Implemented a Byzantine fault tolerant replication protocol using PBFT with threshold signatures and checkpointing to support high concurrency distributed workloads.",
     techStack: ["Go", "gRPC", "Protobuf", "Distributed Systems"]
   },
+
   {
     id: "proj2",
-    title: "Distributed Transaction Processing System with Paxos",
+    title: "Distributed Transaction Processing System with Multi Paxos",
     category: "Distributed Systems",
     description:
-      "Architected a banking system for intra/cross-shard transactions using Paxos with two-phase commit. Achieved 99.99% uptime via Write-Ahead Logging (WAL).",
+      "Built a distributed transaction processing platform using Multi Paxos and two phase commit to maintain strong consistency across distributed shards.",
     techStack: ["Go", "gRPC", "Protobuf", "Paxos"]
   },
+
   {
     id: "proj3",
-    title: "Global Happiness and Sustainability Analytics",
-    category: "Data Visualization & Analytics",
+    title: "Distributed ML Platform on Kubernetes",
+    category: "AI Infrastructure",
     description:
-      "Developed an analytics platform that visualizes global happiness, socioeconomic factors, and sustainability trends across 109 countries. Built interactive dashboards with maps and charts to help compare how economic conditions and policy choices affect overall well-being.",
-    techStack: ["React", "D3.js", "Python", "Data visualization"]
+      "Designed and deployed a distributed machine learning platform using Ray and KubeRay on Kubernetes enabling autoscaling clusters for large scale model inference workloads.",
+    techStack: ["Ray", "KubeRay", "Kubernetes", "FastAPI", "Python"]
   },
+
   {
     id: "proj4",
-    title: "Implementation and Evaluation of CPU scheduling algorithms",
-    category: "Operating Systems",
+    title: "RAG Based Documentation Assistant",
+    category: "AI Systems",
     description:
-      "Implemented Linux-style CPU schedulers in xv6, including a CFS version using a red-black tree and a BFS version using a linked list for constant-time picks. Benchmarked both to compare latency and turnaround time across I/O-bound and CPU-bound workloads.",
-    techStack: ["Kernel v6", "Process Scheduler", "c++", "Operating Systems"]
+      "Built an end to end retrieval augmented generation system integrating LLM APIs, vector databases and document ingestion pipelines enabling citation backed knowledge retrieval across large document collections.",
+    techStack: ["Python", "LangChain", "OpenAI", "Pinecone", "Streamlit"]
   },
+
   {
     id: "proj5",
-    title: "Automated Image Captioning with CNN-LSTM",
-    category: "Machine Learning",
+    title: "Global Happiness and Sustainability Analytics",
+    category: "Data Visualization",
     description:
-      "Developed an image captioning framework that integrates a VGG-based convolutional neural network for visual feature extraction with an LSTM-based decoder for sequence generation. Achieved improved captioning accuracy on the Flickr30k dataset relative to Flickr8k, demonstrating enhanced model scalability and generalization.",
-    techStack: ["CNN", "Python", "LSTM", "Tensorflow"]
+      "Developed an analytics platform visualizing global happiness metrics and sustainability indicators across 100+ countries using interactive charts and maps.",
+    techStack: ["React", "D3.js", "Python"]
   },
+
   {
     id: "proj6",
-    title: "Reddit Community Behavioral Analysis",
-    category: "Data Science",
+    title: "CPU Scheduling Algorithms Evaluation",
+    category: "Operating Systems",
     description:
-      "Analyzed over ten thousand political subreddit posts using LSTM for sentiment and LDA/BERT for topic modeling, with Pandas and NumPy for processing and visualization in Colab.",
-    techStack: [
-      "Pandas",
-      "NumPy",
-      "Python",
-      "BERT",
-      "Data Scraping",
-      "Matplotlib"
-    ]
+      "Implemented Linux style CPU schedulers in the xv6 kernel including a CFS scheduler using red black trees and a BFS scheduler using linked lists for constant time process selection.",
+    techStack: ["xv6 Kernel", "C++", "Operating Systems"]
   },
+
   {
     id: "proj7",
-    title: "PALISADE - Student-Friendly Website",
-    category: "Full Stack Web",
+    title: "Reddit Community Behavioral Analysis",
+    category: "Machine Learning",
     description:
-      "Web platform for college students to share live events and secure chat. Includes blood donor search. Published in Intelligent Computing and Networking Proceedings (Springer).",
-    techStack: ["React", "NodeJS", "MongoDB", "SocketIO"],
-    publication: "ISBN: 978-981-16-4863-2"
+      "Analyzed large scale Reddit discussion datasets using LSTM based sentiment models and BERT based topic modeling to study political discourse patterns.",
+    techStack: ["Python", "TensorFlow", "BERT", "Pandas"]
   }
 ];
 
@@ -169,27 +176,42 @@ export const SKILLS: SkillCategory[] = [
     icon: Code2,
     skills: ["Go", "Python", "Java", "TypeScript", "JavaScript", "SQL"]
   },
+
   {
-    category: "Frameworks",
+    category: "Backend & Frameworks",
     icon: Terminal,
     skills: [
       "Spring Boot",
       "Django",
-      "React.js",
+      "FastAPI",
       "Node.js",
+      "React.js",
       "Next.js",
       "gRPC",
       "REST APIs",
-      "GraphQL",
-      "D3.js"
+      "GraphQL"
     ]
   },
+
   {
-    category: "Cloud & Infra",
+    category: "AI Systems",
+    icon: Cpu,
+    skills: [
+      "RAG Systems",
+      "LangChain",
+      "OpenAI APIs",
+      "Pinecone",
+      "LLM Applications",
+      "AI Agents"
+    ]
+  },
+
+  {
+    category: "Cloud & Infrastructure",
     icon: Cloud,
     skills: [
-      "AWS (EC2, S3, EMR)",
-      "Azure (AKS, App Insights, Monitor)",
+      "AWS",
+      "Azure",
       "Kubernetes",
       "Docker",
       "Terraform",
@@ -199,35 +221,18 @@ export const SKILLS: SkillCategory[] = [
       "Linux"
     ]
   },
+
   {
-    category: "Distributed Systems & Data",
+    category: "Distributed Systems",
     icon: Database,
     skills: [
       "Microservices",
       "Kafka",
-      "Load Balancing",
       "Fault Tolerance",
+      "Consensus Protocols",
+      "Load Balancing",
       "PostgreSQL",
-      "Redis",
-      "MongoDB",
-      "MySQL",
-      "Reinforcement Learning"
-    ]
-  },
-  {
-    category: "Monitoring & Telemetry",
-    icon: Monitor,
-    skills: ["Prometheus", "Grafana", "Azure Monitor"]
-  },
-  {
-    category: "Tools & Practices",
-    icon: ToolCaseIcon,
-    skills: [
-      "Jira",
-      "Postman",
-      "Agile/Scrum",
-      "Performance Optimization",
-      "System Reliability"
+      "Redis"
     ]
   }
 ];

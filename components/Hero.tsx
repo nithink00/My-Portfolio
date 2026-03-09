@@ -67,10 +67,7 @@ const Hero: React.FC = () => {
               </div>
 
               <p className="text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                Specializing in building reliable backend systems, cloud
-                infrastructure and distributed systems. I turn complex
-                engineering problems into simple, scalable and efficient
-                solutions.
+                Building distributed systems, backend platforms and AI infrastructure that power scalable data pipelines and intelligent applications in production.
               </p>
             </div>
 
